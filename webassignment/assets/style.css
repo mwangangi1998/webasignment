@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins","sans-serif";
+
+}
+body{
+   
+    min-height: 100vh;
+    width: 100%;
+    overflow: visible; 
+    cursor: pointer;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    background-color: #a791a4;
+    opacity: 90%;
+    padding: 12px;
+}
+
+.container a{
+    padding: 12px; 
+    color: black;
+}
+
+.topnav {
+ text-align:center;
+
+}
+.container a.icon{
+    display:none;
+}
+ .social-links{
+    float: left;
+}
+.topnav input{
+    background-color:#06011357;
+    color: #fff;
+    padding-left: 30px;
+   border-radius: 16px;
+}
+.bx-search{
+    position: absolute;
+    z-index: 99;
+    color: rgb(250, 246, 246);
+    
+}
+.topnav a:hover{
+    color: rgb(127, 255, 0);
+}
+
+ @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.social-links {display: inline-flex;
+display: none;
+}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.row {
+  display: flex;
+  padding: 12px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 13.33%;
+  padding: 12px;
+}
+#container {
+  position: relative;
+  text-align: center;
+
+}
+.about{
+  
+  position: absolute;
+  top: 10%;
+  font-size:3vw;
+  left: 25%;
+  font-family: "poppins";
+  opacity: 100%;
+  font-weight: bolder;
+}
+.caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.caption p{
+  word-spacing: normal;
+  opacity: 80%;
+  color: rgb(1, 8, 1);
+  text-align: justify;
+  font-size:2vw;
+}
+ 
+.services {
+  display: flex;
+  padding: 12px;
+}
+
+/* Create three equal columns that sits next to each other */
+.services-images {
+  flex: 13.33%;
+  padding: 12px;
+}
+.services-1 p{
+  word-spacing: normal;
+  opacity: 80%;
+  color: rgb(1, 8, 1);
+  text-align: justify;
+  font-size:2vw;
+}
+.section-2{
+  padding: 12px;
+  background-color: #a791a4;
+}
+.section-2 ul li a:hover{
+color: rgb(127, 255, 0);
+transition: 0.2s;
+}
+#accounts{
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  
+}
+
+#accounts ul li {
+   list-style:none;
+   padding:12px;
+
+} 
+.column h2{
+  position: relative;
+  font-size:2vw;
+  left: -2.5%;
+  font-family: "poppins";
+  opacity: 100%;
+  font-weight: bolder;
+  
+}
+
+.follow-us{
+  padding: 12px;
+  background-color:#f9f4f8;
+}
+.wrapper{
+  padding: 12px;
+  background-color: #a791a4;
+  
+}
+.follow-us .label h3{
+ position: relative;
+ font-size: 2.5vh;
+
+ 
+}
+.rating{
+  background-color: #a791a4;
+}
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 40px auto;
+  position: relative;
+ 
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating > label {
+  padding: 20px;
+   width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: rgb(9, 255, 0);
+}
+
+.star-rating label:hover {
+  color: #bfcabd;
+  transition: 0.2s ease;
+}
+.star-rating label:active::before {
+  transform:scale(1.1);
+}
+
+
+.star-rating label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0px;
+  line-height: 26px;
+}
+
+.star-rating input:checked ~ label:before {
+  content:'\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating input:checked ~ label:before {
+  font-size: 36px;
+  line-height: 21px;
+  }
+} 
+footer,.nav a{
+  font-size: 2vh;
+  padding-left:15px ;
+}
+.nav a:hover{
+  color: rgb(127, 255, 0);
+  transition: 0.5s;
+}
+ .copyright{
+   font-size: 2vh;
+    padding-bottom: 3%;
+   color:#131311;
+   padding-left:45%;
+  
+  }
+  
